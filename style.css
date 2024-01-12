@@ -9,6 +9,10 @@
      font-family: 'Open Sans', sans-serif;
  }
 
+ .text-ligt-gray {
+     color: #727272;
+ }
+
  .btn-primary {
      border-radius: 8px;
      color: #fff;
@@ -68,14 +72,66 @@
      color: #131313;
  }
 
- .banner-description {
-     color: #727272;
- }
 
  .banner img {
      margin-top: 20px;
      width: 100%;
  }
+
+ /* main styles  */
+ main {
+     max-width: 1440px;
+     margin: 70px auto;
+ }
+
+ /* teams styles */
+ .teams-container {
+     display: flex;
+     align-items: center;
+ }
+
+ .teams-img-container {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 1.5rem;
+ }
+
+ .teams-content {
+     padding-right: 70px;
+     padding-left: 70px;
+ }
+
+ .teams-title {
+     font-size: 2.8rem;
+ }
+
+ .teams-title .quick-list {
+     font-size: 3rem;
+     font-weight: 500;
+     font-family: 'Work Sans', sans-serif;
+ }
+
+ .teams-title .text-features {
+     color: #ff900e;
+     font-weight: 700;
+     font-family: 'Work Sans', sans-serif;
+ }
+
+ .teams-title .of-our {
+     font-family: 'Work Sans', sans-serif;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
 
  /* responsive styles and media query */
  /* Mobile device */
@@ -84,10 +140,20 @@
          padding: 20px;
      }
 
-     nav {
+     nav,
+     .teams-container {
          flex-direction: column;
      }
+
+     .teams-img-container {
+         grid-template-columns: 1fr;
+     }
+     .teams-content {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
  }
+
 
  /* tablet or medium device */
  @media screen and (min-width:576px) and (max-width:960px) {
@@ -95,44 +161,13 @@
          padding: 50px;
      }
 
-     nav {
+     nav,
+     .teams-container {
          flex-direction: column;
      }
- }
 
- /* main styles  */
- main {
-     max-width: 1440px;
-     margin: 0 auto;
+     .teams-img-container {
+         grid-template-columns: 1fr;
+     }
+
  }
- /* teams styles */
- .teams-container{
-    display: flex;
-    align-items: center;
- }
- .teams-img-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
- }
- .teams-content{
-    padding-right: 70px;
-    padding-left: 70px;
- }
-.teams-title{
-    font-size: 2.8rem;
-}
-.teams-title .quick-list{
-    color: #727272;
-    font-size: 3rem;
-    font-weight: 500;
-    font-family: 'Work Sans', sans-serif;
-}
-.teams-title .text-features{
-    color: #ff900e;
-    font-weight: 700;
-    font-family: 'Work Sans', sans-serif;
-}
-.teams-title .of-our{
-    font-family: 'Work Sans', sans-serif;
-}
